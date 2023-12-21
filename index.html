@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/sass/index.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel(
+                {
+                    loop: true,
+                    margin: 24,
+                    nav: true,
+                    navContainer: '#owl-nav-box',
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3.05
+                        }
+                    }
+                }
+            );
+        });
+    </script>
+
+</head>
+
+<body>
+    <header class="flex justify-between">
+        <span class="logo">Education</span>
+
+        <div class="flex justify-between gap-100">
+            <nav class="flex gap-40">
+                <a class="flex" href="#">
+                    <span class="color-blue">Home</span>
+                    <img src="./assets/icons/arrow-bottom-blue.svg" alt="icon">
+                </a>
+
+                <a class="flex" href="#">
+                    <span>Courses</span>
+                    <img src="./assets/icons/arrow-bottom.svg" alt="icon">
+                </a>
+
+                <a class="flex" href="#">
+                    <span>Page</span>
+                    <img src="./assets/icons/arrow-bottom.svg" alt="icon">
+                </a>
+
+                <a class="flex" href="#">
+                    <span>Blog</span>
+                    <img src="./assets/icons/arrow-bottom.svg" alt="icon">
+                </a>
+
+                <a class="flex" href="#">
+                    <span>Contact</span>
+                </a>
+            </nav>
+
+            <div>
+                <button class="btn">Signin</button>
+
+                <button class="btn btn-blue">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-1">
+            <div class="overly">
+                <h1 class="white">Self-Paced Learning Courses Online</h1>
+
+                <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, vestibulum euismod
+                    nullam elementum. Urna,
+                    posuere nisi sit gravida massa. Ultrices bibendum sagittis pellentesque vitae sit.</p>
+
+                <button class="btn btn-blue">Start a coures</button>
+            </div>
+
+            <div class="box flex justify-between gap-155">
+                <div class="flex gap-24">
+                    <img src="./assets/icons/course.svg" alt="icon">
+
+                    <div class="flex column gap-8">
+                        <span class="box-title">1400+</span>
+
+                        <span>Online Courses</span>
+                    </div>
+                </div>
+
+                <div class="flex gap-24">
+                    <img src="./assets/icons/instructor.svg" alt="icon">
+
+                    <div class="flex column gap-8">
+                        <span class="box-title">1100+</span>
+
+                        <span>Expert Instructors</span>
+                    </div>
+                </div>
+
+                <div class="flex gap-24">
+                    <img src="./assets/icons/stories.svg" alt="icon">
+
+                    <div class="flex column gap-8">
+                        <span class="box-title">800+</span>
+
+                        <span>Success Stories</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-2 flex">
+            <div>
+                <h1>Find Your Course That Makes Bright Future</h1>
+
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies at diam magnis
+                    faucibus et
+                    faucibus gravida. malesuada fauci bus iaculis eu. Fusce est, consectetur tempor penatibus sed. Ut
+                    dolor, vulputate quam nec aliquam aliquam nisl. Auctor eros, iaculis quam nisi, </p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit. </p>
+
+                <button class="btn btn-blue">Learn More</button>
+            </div>
+
+            <div class="relative">
+                <img src="./assets/images/pexels-monstera-6238005 1.png" alt="video">
+
+                <img class="play" src="./assets/icons/play.svg" alt="icon">
+            </div>
+        </section>
+
+        <section class="section-3">
+            <div class="section-title">
+                <h1>How It Work</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Aliquam et hendrerit euismod fusce
+                    sit. </p>
+            </div>
+
+            <div class="works">
+                <div class="box">
+                    <img src="./assets/icons/online.svg" alt="icon">
+
+                    <h2>Learn More Online</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Aliquam et hendrer it eui smod fusce
+                        sit.</p>
+                </div>
+
+                <div class="box">
+                    <img src="./assets/icons/notes.svg" alt="icon">
+
+                    <h2>Writing Notes</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Aliquam et hendrer it eui smod fusce
+                        sit.</p>
+                </div>
+
+                <div class="box">
+                    <img src="./assets/icons/sessions.svg" alt="icon">
+
+                    <h2>Interactive Sessions</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Aliquam et hendrer it eui smod fusce
+                        sit.</p>
+                </div>
+
+                <div class="box">
+                    <img src="./assets/icons/support.svg" alt="icon">
+
+                    <h2>Life Time Support</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Aliquam et hendrer it eui smod fusce
+                        sit.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-4">
+            <div class="section-title">
+                <h1>Our All The Online Courses</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in <br /> leo.
+                    Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="card-box">
+                <div class="card">
+                    <img src="./assets/images/wonderlane-b9-odQi5oDo-unsplash 1.png" alt="image">
+
+                    <div class="card-subtitle flex justify-between">
+                        <img class="circle" src="./assets/icons/user.svg" alt="icon">
+                        <span>5.8k</span>
+                        <img class="circle" src="./assets/icons/eye.svg" alt="icon">
+                        <span>69k</span>
+                        <img class="circle" src="./assets/icons/star.svg" alt="icon">
+                        <span>4.5</span>
+                        <img src="./assets/images/Ellipse 18.png" alt="image">
+                    </div>
+
+                    <div class="card-title flex justify-between">
+                        <span>Development</span>
+
+                        <span class="color-blue">$150</span>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst in leo. Lorem
+                        ipsum dolor sit.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/jeswin-thomas-6CH6tftqENQ-unsplash 1.png" alt="image">
+
+                    <div class="card-subtitle flex justify-between">
+                        <img class="circle" src="./assets/icons/user.svg" alt="icon">
+                        <span>5.8k</span>
+                        <img class="circle" src="./assets/icons/eye.svg" alt="icon">
+                        <span>69k</span>
+                        <img class="circle" src="./assets/icons/star.svg" alt="icon">
+                        <span>4.5</span>
+                        <img src="./assets/images/Ellipse 22.png" alt="image">
+                    </div>
+
+                    <div class="card-title flex justify-between">
+                        <span>Android Developer</span>
+
+                        <span class="color-blue">$130</span>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst in leo. Lorem
+                        ipsum dolor sit.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/mr-bochelly-IBKyH0V3rew-unsplash 1.png" alt="image">
+
+                    <div class="card-subtitle flex justify-between">
+                        <img class="circle" src="./assets/icons/user.svg" alt="icon">
+                        <span>5.8k</span>
+                        <img class="circle" src="./assets/icons/eye.svg" alt="icon">
+                        <span>69k</span>
+                        <img class="circle" src="./assets/icons/star.svg" alt="icon">
+                        <span>4.5</span>
+                        <img src="./assets/images/Ellipse 21.png" alt="image">
+                    </div>
+
+                    <div class="card-title flex justify-between">
+                        <span>Java Script Course</span>
+
+                        <span class="color-blue">$140</span>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst in leo. Lorem
+                        ipsum dolor sit.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/mimi-thian-slWBjTGhREQ-unsplash 1.png" alt="image">
+
+                    <div class="card-subtitle flex justify-between">
+                        <img class="circle" src="./assets/icons/user.svg" alt="icon">
+                        <span>5.8k</span>
+                        <img class="circle" src="./assets/icons/eye.svg" alt="icon">
+                        <span>69k</span>
+                        <img class="circle" src="./assets/icons/star.svg" alt="icon">
+                        <span>4.5</span>
+                        <img src="./assets/images/Ellipse 21.png" alt="image">
+                    </div>
+
+                    <div class="card-title flex justify-between">
+                        <span>Android Developer</span>
+
+                        <span class="color-blue">$120</span>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst in leo. Lorem
+                        ipsum dolor sit.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/jeswin-thomas-wRdYnqXtyYk-unsplash 1.png" alt="image">
+
+                    <div class="card-subtitle flex justify-between">
+                        <img class="circle" src="./assets/icons/user.svg" alt="icon">
+                        <span>5.8k</span>
+                        <img class="circle" src="./assets/icons/eye.svg" alt="icon">
+                        <span>69k</span>
+                        <img class="circle" src="./assets/icons/star.svg" alt="icon">
+                        <span>4.5</span>
+                        <img src="./assets/images/Ellipse 19.png" alt="image">
+                    </div>
+
+                    <div class="card-title flex justify-between">
+                        <span>Java Script Course</span>
+
+                        <span class="color-blue">$120</span>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst in leo. Lorem
+                        ipsum dolor sit.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/fred-kloet-IrQZkyhdOow-unsplash 1.png" alt="image">
+
+                    <div class="card-subtitle flex justify-between">
+                        <img class="circle" src="./assets/icons/user.svg" alt="icon">
+                        <span>5.8k</span>
+                        <img class="circle" src="./assets/icons/eye.svg" alt="icon">
+                        <span>69k</span>
+                        <img class="circle" src="./assets/icons/star.svg" alt="icon">
+                        <span>4.5</span>
+                        <img src="./assets/images/Ellipse 20.png" alt="image">
+                    </div>
+
+                    <div class="card-title flex justify-between">
+                        <span>Basic Marketing</span>
+
+                        <span class="color-blue">$100</span>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst in leo. Lorem
+                        ipsum dolor sit.</p>
+                </div>
+            </div>
+
+            <div class="flex">
+                <button class="btn btn-blue">View All Course</button>
+            </div>
+        </section>
+
+        <section class="section-5">
+            <div class="section-title">
+                <h1>Meet with Our Mentor</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, vestibulum <br /> euismod nullam
+                    elementum.
+                    Urna, posuere nisi sit gravida massa.</p>
+            </div>
+
+            <div class="card-box">
+                <div class="card">
+                    <img src="./assets/images/dr-terrence-underwood-Io0eEAfSMjY-unsplash 2.png" alt="image">
+
+                    <div class="content">
+                        <h3>Muhammad Ali</h3>
+
+                        <p>CEO, Developer</p>
+
+                        <div class="flex justify-between">
+                            <div class="flex gap-16">
+                                <div class="flex gap-8">
+                                    <img src="./assets/icons/user.svg" alt="icon">
+
+                                    <span>8.2k</span>
+                                </div>
+
+                                <div class="flex gap-8">
+                                    <img src="./assets/icons/star-fill.svg" alt="icon">
+
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+
+                            <span>25+ Courses</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/thisisengineering-raeng-TXxiFuQLBKQ-unsplash 1.png" alt="image">
+
+                    <div class="content">
+                        <h3>Braniya Lara</h3>
+
+                        <p>Content Writter</p>
+
+                        <div class="flex justify-between">
+                            <div class="flex gap-16">
+                                <div class="flex gap-8">
+                                    <img src="./assets/icons/user.svg" alt="icon">
+
+                                    <span>8.2k</span>
+                                </div>
+
+                                <div class="flex gap-8">
+                                    <img src="./assets/icons/star-fill.svg" alt="icon">
+
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+
+                            <span>25+ Courses</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/senior-male-professor-explaining-writing-green-chalkboard 1.png"
+                        alt="image">
+
+                    <div class="content">
+                        <h3>Muhammad Ali</h3>
+
+                        <p>Content Writter</p>
+
+                        <div class="flex justify-between">
+                            <div class="flex gap-16">
+                                <div class="flex gap-8">
+                                    <img src="./assets/icons/user.svg" alt="icon">
+
+                                    <span>8.2k</span>
+                                </div>
+
+                                <div class="flex gap-8">
+                                    <img src="./assets/icons/star-fill.svg" alt="icon">
+
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+
+                            <span>25+ Courses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-6">
+            <div class="section-title">
+                <h1>Upcoming Event</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Amet, vestibulum euismod nullam
+                    elementum.</p>
+            </div>
+
+            <div class="card-box">
+                <div class="card">
+                    <div class="relative">
+                        <img src="./assets/images/pexels-ivan-samkov-5676744 2.png" alt="image">
+
+                        <span>10 <br /> APR</span>
+                    </div>
+
+                    <div class="content">
+                        <h3>TED Talks at UCF College of Education</h3>
+
+                        <div class="flex justify-between">
+                            <div class="flex gap-8">
+                                <img src="./assets/icons/clock.svg" alt="icon">
+
+                                <span>4.00 pm - 8.00 pm</span>
+                            </div>
+
+                            <div class="flex gap-8">
+                                <img src="./assets/icons/location.svg" alt="icon">
+
+                                <span>Dhaka Bangladesh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="relative">
+                        <img src="./assets/images/pexels-david-jakab-1130683 1.png" alt="image">
+
+                        <span>10 <br /> APR</span>
+                    </div>
+
+                    <div class="content">
+                        <h3>Summer Course Starts <br /> From June</h3>
+
+                        <div class="flex justify-between">
+                            <div class="flex gap-8">
+                                <img src="./assets/icons/clock.svg" alt="icon">
+
+                                <span>4.00 pm - 8.00 pm</span>
+                            </div>
+
+                            <div class="flex gap-8">
+                                <img src="./assets/icons/location.svg" alt="icon">
+
+                                <span>Dhaka Bangladesh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="relative">
+                        <img src="./assets/images/pexels-kampus-production-5940842 1.png" alt="image">
+
+                        <span>10 <br /> APR</span>
+                    </div>
+
+                    <div class="content">
+                        <h3>Importance of Research <br /> Seminar</h3>
+
+                        <div class="flex justify-between">
+                            <div class="flex gap-8">
+                                <img src="./assets/icons/clock.svg" alt="icon">
+
+                                <span>4.00 pm - 8.00 pm</span>
+                            </div>
+
+                            <div class="flex gap-8">
+                                <img src="./assets/icons/location.svg" alt="icon">
+
+                                <span>Dhaka Bangladesh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-7">
+            <div class="flex box">
+                <div>
+                    <h1>85+</h1>
+
+                    <span>Teachers</span>
+                </div>
+
+                <div>
+                    <h1>850+</h1>
+
+                    <span>Students</span>
+                </div>
+
+                <div>
+                    <h1>55+</h1>
+
+                    <span>Courses</span>
+                </div>
+
+                <div>
+                    <h1>25+</h1>
+
+                    <span>Country</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-8">
+            <div class="section-title">
+                <h1>Our Latest Blog</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Amet, vestibulum euismod nullam at
+                    entum.</p>
+            </div>
+
+            <div class="card-box">
+                <div class="card">
+                    <img src="./assets/images/linkedin-sales-solutions-YDVdprpgHv4-unsplash 1.png" alt="image">
+
+                    <div class="content">
+                        <h3>Product Marketing Creative Camping Brand Image</h3>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Amet, vestibulum euismod nullam at
+                            entum. Urna, posuere nisi sit gravida massa.</p>
+
+                        <a href="#">Read More...</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/beci-harmony-OhYQoFi8laE-unsplash 2.png" alt="image">
+
+                    <div class="content">
+                        <h3>Product Marketing Creative Camping Brand Image</h3>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Amet, vestibulum euismod nullam at
+                            entum. Urna, posuere nisi sit gravida massa.</p>
+
+                        <a href="#">Read More...</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/windows-p74ndnYWRY4-unsplash 1.png" alt="image">
+
+                    <div class="content">
+                        <h3>Product Marketing Creative Camping Brand Image</h3>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Amet, vestibulum euismod nullam at
+                            entum. Urna, posuere nisi sit gravida massa.</p>
+
+                        <a href="#">Read More...</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <button class="btn btn-blue">View All</button>
+            </div>
+        </section>
+
+        <section class="section-9">
+            <div class="section-title">
+                <h1>What Our Students Say</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat <br /> mauris non dictumst in leo.
+                    Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="cover">
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Placerat mauris non dictumst in leo
+                            etiam. Proin iaculis arcu iaculis egestas.</p>
+
+                        <div class="flex">
+                            <img src="./assets/images/Ellipse 33.png" alt="image">
+
+                            <div class="content">
+                                <h3>Jony Ahmed</h3>
+
+                                <span>UI/UX Student</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Placerat mauris non dictumst in leo
+                            etiam. Proin iaculis arcu iaculis egestas.</p>
+
+                        <div class="flex">
+                            <img src="./assets/images/Ellipse 34.png" alt="image">
+
+                            <div class="content">
+                                <h3>Mukter Hossain</h3>
+
+                                <span>UI/UX Student</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Placerat mauris non dictumst in leo
+                            etiam. Proin iaculis arcu iaculis egestas.</p>
+
+                        <div class="flex">
+                            <img src="./assets/images/Ellipse 35.png" alt="image">
+
+                            <div class="content">
+                                <h3>Jony Sing</h3>
+
+                                <span>UI/UX Student</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="owl-nav-box"></div>
+
+            </div>
+
+        </section>
+
+        <section class="section-10">
+            <div class="box">
+                <h1>What Our Students Say</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat <br /> mauris non dictumst in leo.
+                    Lorem
+                    ipsum dolor sit amet.</p>
+
+                <div class="input-box flex justify-between">
+                    <input type="text" placeholder="Enter your email...">
+
+                    <button class="btn btn-blue">Subscribe</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="flex justify-between gap-100">
+        <div class="footer-left">
+            <h2>Education</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Amet, vestibulum euismod nullam the elementum.
+                Urna, posuere nisi sit gravid.</p>
+
+            <h2 class="follow">Follow Us</h2>
+
+            <div class="flex social gap-8">
+                <a href="#">
+                    <img src="./assets/icons/facebook.svg" alt="icon">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/twitter.svg" alt="icon">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/instgram.svg" alt="icon">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/linkedin.svg" alt="icon">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-right flex justify-between">
+            <div>
+                <h2>Feature Links</h2>
+
+                <ul>
+                    <li>
+                        <a class="flex" href="#">
+                            <img src="./assets/icons/to-right-blue.svg" alt="icon">
+                            <p>About Us</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex" href="#">
+                            <img src="./assets/icons/to-right-blue.svg" alt="icon">
+                            <p>Graduation</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex" href="#">
+                            <img src="./assets/icons/to-right-blue.svg" alt="icon">
+                            <p>Scholarship</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex" href="#">
+                            <img src="./assets/icons/to-right-blue.svg" alt="icon">
+                            <p>Admissions</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex" href="#">
+                            <img src="./assets/icons/to-right-blue.svg" alt="icon">
+                            <p>International</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex" href="#">
+                            <img src="./assets/icons/to-right-blue.svg" alt="icon">
+                            <p>Events</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Support</h2>
+
+                <ul>
+                    <li>
+                        <a class="flex" href="#">
+                            <img src="./assets/icons/to-right-blue.svg" alt="icon">
+                            <p>Language</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex" href="#">
+                            <img src="./assets/icons/to-right-blue.svg" alt="icon">
+                            <p>WordPress</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex" href="#">
+                            <img src="./assets/icons/to-right-blue.svg" alt="icon">
+                            <p>Privacy</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex" href="#">
+                            <img src="./assets/icons/to-right-blue.svg" alt="icon">
+                            <p>FAQs</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex" href="#">
+                            <img src="./assets/icons/to-right-blue.svg" alt="icon">
+                            <p>Support</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Contact Us</h2>
+
+                <p>230,Mirpur Area, Mirpur 10, <br /> Dhaka,Bangladesh</p>
+
+                <ul>
+                    <li>
+                        <a class="flex gap-8" href="#">
+                            <img src="./assets/icons/phone.svg" alt="icon">
+                            <p>+017 4845 7269</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex gap-8" href="#">
+                            <img src="./assets/icons/email.svg" alt="icon">
+                            <p>info@gmail.com</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex gap-8" href="#">
+                            <img src="./assets/icons/globe.svg" alt="icon">
+                            <p>www.yourdomain.com</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
